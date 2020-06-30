@@ -1,0 +1,142 @@
+body {
+    background-color: hsl(0, 100%, 74%);
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    background-image: url(./images/bg-intro-desktop.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    padding: 5%;
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .container {
+    width: 75%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @font-face {
+    font-family: b;
+    src: url(./fonts/Poppins-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: sb;
+    src: url(./fonts/Poppins-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: m;
+    src: url(./fonts/Poppins-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: r;
+    src: url(./fonts/Poppins-Regular.ttf);
+  }
+
+  .title {
+    font-family: b;
+    font-size: 54px;
+    color: white;
+
+  }
+
+  .paragraph {
+    font-family: r;
+    font-size: 16px;
+    color: white;
+  }
+
+  .top {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bold {
+    font-family: b;
+    font-size: 16px;
+    color: white;
+  }
+
+  .regu {
+    padding-left: 5px;
+    font-family: r;
+    font-size: 16px;
+    color: white;
+  }
+
+  .bottom {
+    margin-top: auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    width: 80%;
+    height: 8%;
+    margin: auto;
+  }
+
+  button {
+    width: 80%;
+    height: 8%;
+    margin: auto;
+    background-color: hsl(154, 59%, 51%);
+    border-width: 0px;
+    font-family: m;
+    font-size: 16px;
+    color: white;
+  }
+
+  ::placeholder {
+    padding-left: 10px;
+    font-family: m;
+    font-size: 16px;
+  }
+
+  .form-control::-webkit-input-placeholder {
+    padding: 10px;
+  }
+
+  input.form-control {
+    box-sizing: border-box;
+    width: 80%;
+    padding-left: 30px;
+  }
