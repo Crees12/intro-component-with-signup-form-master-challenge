@@ -30,18 +30,29 @@
       </div>
       <div class="bottom">
 
-        <input class="form-control" type="text" placeholder="First Name" name="fname" id="fname" required>
-        <input class="form-control" type="text" placeholder="Last Name" name="lname" id="lname" required>
-        <input class="form-control" type="email" name="email" placeholder="Email Address" id="email">
+        <input onchange="myFunction(this.value,this.id)" class="form-control" type="text" placeholder="First Name"
+          name="fname" id="fname" required>
+        <input onchange="myFunction(this.value,this.id)" class="form-control" type="text" placeholder="Last Name"
+          name="lname" id="lname" required>
+        <input onchange="myFunction(this.value,this.id)" class="form-control" type="email" name="email"
+          placeholder="Email Address" id="email">
 
-        <input class="form-control" type="password" placeholder="Password" name="psw" id="psw" required>
+        <input onchange="myFunction(this.value,this.id)" class="form-control" type="password" placeholder="Password"
+          name="psw" id="psw" required>
 
         <button>Claim Your Free Trail</button>
       </div>
     </div>
   </div>
 
-
+  <script>
+    function myFunction(val, id) {
+      console.log(id)
+      if (val === "") {
+        document.getElementById(`${id}`).style.background = "url(images/icon-error.svg) no-repeat right center"
+      }
+    }
+  </script>
 </body>
 
 </html>
